@@ -52,7 +52,7 @@
     </div>
   </header>
 
-  <main class="main" style="margin-top: 80px;">
+<main class="main" style="margin-top: 80px;">
   <div class="page-title" data-aos="fade">
     <div class="heading">
       <div class="container">
@@ -71,7 +71,6 @@
       <div class="container">
         <ol>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="portfolio1.html">Portfolio</a></li>
           <li class="current">Administrer</li>
         </ol>
       </div>
@@ -84,67 +83,79 @@
     <div class="section">
       <h2>Niveau 1 — Assister l’administrateur du réseau</h2>
       <p>
-        Ce niveau correspond aux compétences fondamentales nécessaires pour intervenir sur un réseau local,
-        comprendre son fonctionnement et assister un administrateur réseau dans ses tâches quotidiennes.
+        Ce niveau regroupe les compétences essentielles pour intervenir sur un réseau local,
+        comprendre son fonctionnement et assister un administrateur réseau.
       </p>
     </div>
 
     <!-- AC11.01 -->
     <div class="section">
-      <h2>AC11.01 — Maîtriser les lois fondamentales de l’électricité</h2>
-      <p>
-        Comprendre les bases de l’électricité est essentiel pour intervenir en sécurité sur des équipements
-        réseaux et télécoms. Cela inclut les notions de tension, courant, résistance, puissance et sécurité électrique.
-      </p>
+      <h2 class="ac-title" data-target="ac11-01">AC11.01 — Maîtriser les lois fondamentales de l’électricité</h2>
+      <div id="ac11-01" class="ac-content">
+        <p>
+          Comprendre les bases de l’électricité est essentiel pour intervenir en sécurité sur des équipements
+          réseaux et télécoms : tension, courant, résistance, puissance et sécurité électrique.
+        </p>
+      </div>
     </div>
 
     <!-- AC11.02 -->
     <div class="section">
-      <h2>AC11.02 — Comprendre l’architecture des systèmes numériques</h2>
-      <p>
-        Cet apprentissage couvre les principes du codage de l’information, les communications numériques,
-        l’architecture des réseaux et les fondements de l’Internet (modèle OSI, TCP/IP, adressage, etc.).
-      </p>
+      <h2 class="ac-title" data-target="ac11-02">AC11.02 — Comprendre l’architecture des systèmes numériques</h2>
+      <div id="ac11-02" class="ac-content">
+        <p>
+          Cet apprentissage couvre les principes du codage de l’information, les communications numériques,
+          l’architecture des réseaux et les fondements de l’Internet.
+        </p>
+      </div>
     </div>
 
     <!-- AC11.03 -->
     <div class="section">
-      <h2>AC11.03 — Configurer les fonctions de base du réseau local</h2>
-      <p>
-        Il s’agit de savoir configurer un réseau local simple : adressage IP, DHCP, DNS, configuration de switchs,
-        création de VLANs de base et mise en place d’une connectivité fonctionnelle.
-      </p>
+      <h2 class="ac-title" data-target="ac11-03">AC11.03 — Configurer les fonctions de base du réseau local</h2>
+      <div id="ac11-03" class="ac-content">
+        <p>
+          Configuration d’un réseau local simple : adressage IP, DHCP, DNS, switchs, VLANs et connectivité.
+        </p>
+      </div>
     </div>
 
     <!-- AC11.04 -->
     <div class="section">
-      <h2>AC11.04 — Maîtriser les systèmes d’exploitation</h2>
-      <p>
-        Cet apprentissage vise à comprendre les rôles fondamentaux des systèmes d’exploitation (Windows, Linux)
-        afin de pouvoir les configurer, les administrer et interagir avec eux dans un contexte réseau.
-      </p>
+      <h2 class="ac-title" data-target="ac11-04">AC11.04 — Maîtriser les systèmes d’exploitation</h2>
+      <div id="ac11-04" class="ac-content">
+        <p>
+          Comprendre les rôles fondamentaux des systèmes d’exploitation (Windows, Linux) pour les configurer
+          et les administrer dans un contexte réseau.
+        </p>
+      </div>
     </div>
 
     <!-- AC11.05 -->
     <div class="section">
-      <h2>AC11.05 — Identifier les dysfonctionnements du réseau local</h2>
-      <p>
-        L’objectif est de savoir diagnostiquer les problèmes courants d’un réseau local : perte de connectivité,
-        mauvaise configuration IP, panne matérielle, problème de câblage, etc., et de savoir les signaler clairement.
-      </p>
+      <h2 class="ac-title" data-target="ac11-05">AC11.05 — Identifier les dysfonctionnements du réseau local</h2>
+      <div id="ac11-05" class="ac-content">
+        <p>
+          Diagnostiquer les problèmes courants : perte de connectivité, mauvaise configuration IP, panne matérielle,
+          problème de câblage, etc.
+        </p>
+      </div>
     </div>
 
     <!-- AC11.06 -->
     <div class="section">
-      <h2>AC11.06 — Installer un poste client</h2>
-      <p>
-        Cela inclut l’installation d’un système d’exploitation, la configuration réseau, l’intégration dans un domaine,
-        l’installation des logiciels nécessaires et la rédaction d’une procédure claire et reproductible.
-      </p>
+      <h2 class="ac-title" data-target="ac11-06">AC11.06 — Installer un poste client</h2>
+      <div id="ac11-06" class="ac-content">
+        <p>
+          Installation d’un OS, configuration réseau, intégration dans un domaine, installation des logiciels
+          et rédaction d’une procédure claire.
+        </p>
+      </div>
     </div>
 
   </div>
 </main>
+
 
 
   <footer id="footer" class="footer dark-background">
@@ -192,6 +203,22 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  document.querySelectorAll('.ac-title').forEach(title => {
+    title.addEventListener('click', () => {
+      const target = document.getElementById(title.dataset.target);
+
+      // Ferme tous les autres
+      document.querySelectorAll('.ac-content').forEach(content => {
+        if (content !== target) content.style.display = 'none';
+      });
+
+      // Ouvre / ferme celui cliqué
+      target.style.display = (target.style.display === 'block') ? 'none' : 'block';
+    });
+  });
+</script>
+
 
 </body>
 
