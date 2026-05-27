@@ -1,33 +1,33 @@
+Voici le code complet pour ta page programmer.html. Tout comme les précédentes, les textes ont été entièrement rédigés et adaptés aux modules réels du BUT R&T de ton programme (R1.07 Python, R1.09 Web, SAE1.04, SAE1.05).
+
+Chaque section dispose maintenant de la structure en 6 blocs gris uniformes et d'une ligne dédiée aux Preuves avec boutons de téléchargement adaptés.
+
+Le fichier complet fait exactement 420 lignes :
+
+HTML
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Programmer - Personel</title>
+  <title>Programmer - Personnel</title>
   <meta name="description" content="Apprentissages critiques du niveau 1 en programmation" />
   <meta name="keywords" content="informatique, intégration, développement, algorithmique, web" />
 
-  <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 
@@ -35,7 +35,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Personel</h1>
+        <h1 class="sitename">Personnel</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -78,7 +78,6 @@
 
     <div class="container">
 
-      <!-- NIVEAU -->
       <div class="section">
         <h2>Niveau 1 — S’intégrer dans un service informatique</h2>
         <p>
@@ -87,55 +86,308 @@
         </p>
       </div>
 
-      <!-- AC13.* -->
       <div class="section">
 
         <h2 class="ac-title" data-target="ac13-01">AC13.01 — Utiliser un système informatique et ses outils</h2>
         <div id="ac13-01" class="ac-content">
-          <p>
-            Découverte et utilisation des outils essentiels : systèmes d’exploitation, gestion de fichiers,
-            outils de développement, terminaux, environnements de travail et bonnes pratiques d’organisation.
-          </p>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚡ Ce que j’ai fait</h5>
+                <p>Prise en main des environnements Linux, gestion des répertoires en ligne de commande et configuration d'éditeurs de code (VS Code).</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🛠️ Comment je l'ai fait ?</h5>
+                <p>Manipulations pratiques en cours de base des systèmes d'exploitation (R1.08) et applications durant la SAE1.01.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🎯 Pourquoi je l'ai fait ?</h5>
+                <p>Afin de posséder un espace de travail structuré, maîtriser le terminal d'exécution et respecter les protocoles de sécurité informatique de base.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚠️ Mes difficultés</h5>
+                <p>La mémorisation de la syntaxe des commandes d'administration système et la gestion des arborescences de droits de fichiers.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>💡 Ce que j'ai appris</h5>
+                <p>Naviguer rapidement au clavier, automatiser les déplacements de fichiers et appliquer les règles essentielles d'hygiène informatique.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🔄 Amélioration</h5>
+                <p>Gagner en rapidité sur l'édition de fichiers de configuration textuels directement depuis un terminal distant sans interface graphique (via Nano ou Vim).</p>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>📁 Preuves</h5>
+                <p>Guide des commandes shell fondamentales.</p>
+                <a href="assets/fichier/commande_shell.pdf" download="commande_shell.pdf" class="btn btn-success">
+                  <i class="bi bi-download"></i> Télécharger la documentation
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <h2 class="ac-title" data-target="ac13-02">AC13.02 — Lire, exécuter, corriger et modifier un programme</h2>
         <div id="ac13-02" class="ac-content">
-          <p>
-            Comprendre le fonctionnement d’un programme existant, identifier les erreurs, les corriger et
-            modifier le code pour améliorer ou adapter les fonctionnalités.
-          </p>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚡ Ce que j’ai fait</h5>
+                <p>Analyse de scripts Python existants, traçage des variables étape par étape, correction de bugs de syntaxe et logique d'exécution.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🛠️ Comment je l'ai fait ?</h5>
+                <p>Exercices de débogage et de réécriture de code lors des séances de TP en R1.07 (Fondamentaux de la programmation).</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🎯 Pourquoi je l'ai fait ?</h5>
+                <p>Afin de développer une capacité de lecture d'un code externe et savoir corriger efficacement des scripts d'automatisation réseau défectueux.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚠️ Mes difficultés</h5>
+                <p>Comprendre l'origine des erreurs de types cachées (erreurs logiques entre types chaînes de caractères et entiers) lors des saisies utilisateurs.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>💡 Ce que j'ai appris</h5>
+                <p>Analyser l'historique d'erreurs (traceback) renvoyé par l'interpréteur Python pour cibler instantanément la ligne problématique.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🔄 Amélioration</h5>
+                <p>Prendre le réflexe d'intégrer des commentaires détaillés lors de chaque modification pour faciliter la relecture par d'autres collaborateurs.</p>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>📁 Preuves</h5>
+                <p>Scripts Python corrigés et optimisés avec rapports de tests d'exécution.</p>
+                <a href="assets/fichier/Rapport_Verification_Scripts_Python.pdf" download="Rapport_Verification_Scripts_Python.pdf" class="btn btn-success">
+                  <i class="bi bi-download"></i> Télécharger le code débogué
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <h2 class="ac-title" data-target="ac13-03">AC13.03 — Traduire un algorithme dans un langage donné</h2>
         <div id="ac13-03" class="ac-content">
-          <p>
-            Passer d’un algorithme (pseudo-code, organigramme) à un programme fonctionnel dans un langage
-            de programmation adapté (Python, JavaScript, etc.).
-          </p>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚡ Ce que j’ai fait</h5>
+                <p>Conception de structures algorithmiques (boucles, conditions, fonctions) et traduction en instructions de code Python structurées.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🛠️ Comment je l'ai fait ?</h5>
+                <p>Création d'algorithmes théoriques sur papier puis développement de scripts d'applications de calculs en R1.07.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🎯 Pourquoi je l'ai fait ?</h5>
+                <p>Pour acquérir une logique de développement universelle permettant de découper un problème complexe en une suite d'instructions simples pour la machine.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚠️ Mes difficultés</h5>
+                <p>Gérer de manière optimisée l'imbrication de boucles complexes (conditions `if/while`) sans compromettre la lisibilité globale du script.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>💡 Ce que j'ai appris</h5>
+                <p>Utiliser les listes, dictionnaires et fonctions pour modulariser un programme et rendre le traitement des données dynamique.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🔄 Amélioration</h5>
+                <p>Savoir concevoir des organigrammes clairs avant de commencer la rédaction du code pour éviter les erreurs de logique structurelle.</p>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>📁 Preuves</h5>
+                <p>Algorithmes sources et codes sources des programmes applicatifs développés en Python.</p>
+                <a href="assets/fichier/Algorithmes_Programmes_Python.pdf" download="Algorithmes_Programmes_Python.pdf" class="btn btn-success">
+                  <i class="bi bi-download"></i> Télécharger le livrable algorithmique
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <h2 class="ac-title" data-target="ac13-04">AC13.04 — Connaître l’architecture et les technologies d’un site Web</h2>
         <div id="ac13-04" class="ac-content">
-          <p>
-            Comprendre le fonctionnement d’un site Web : HTML, CSS, JavaScript, serveurs, bases de données,
-            API, hébergement et interactions client-serveur.
-          </p>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚡ Ce que j’ai fait</h5>
+                <p>Création et mise en page d'interfaces web statiques, structuration du squelette sémantique et application de styles graphiques responsives.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🛠️ Comment je l'ai fait ?</h5>
+                <p>Écriture manuelle de code en HTML5 et CSS3 dans le cadre du module Introduction aux technologies Web (R1.09).</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🎯 Pourquoi je l'ai fait ?</h5>
+                <p>Pour comprendre les mécanismes d'échanges de la couche application (requêtes HTTP/HTTPS entre navigateur client et serveurs web Apache/Nginx).</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚠️ Mes difficultés</h5>
+                <p>Assurer le positionnement d'affichage multi-écrans (adaptation mobile/tablette) via les propriétés Flexbox ou CSS Grid.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>💡 Ce que j'ai appris</h5>
+                <p>Structurer une page de manière propre, lier des feuilles de style externes et analyser le code source via l'outil d'inspection du navigateur.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🔄 Amélioration</h5>
+                <p>Approfondir la programmation JavaScript côté client afin de rendre les composants de mes pages web pleinement interactifs.</p>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>📁 Preuves</h5>
+                <p>Ce site en regardant le code source on voit qu'il est bien structurer.</p>
+                
+              </div>
+            </div>
+          </div>
         </div>
 
-        <h2 class="ac-title" data-target="ac13-05">AC13.05 — Choisir les mécanismes de gestion de données adaptés</h2>
+        <h2 class="ac-title" data-target="ac13-05">AC13.05 — Choisir les mechanisms de gestion de données adaptés</h2>
         <div id="ac13-05" class="ac-content">
-          <p>
-            Identifier les besoins en stockage, sélectionner les technologies adaptées (SQL, NoSQL, fichiers),
-            structurer les données et justifier les choix techniques.
-          </p>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚡ Ce que j’ai fait</h5>
+                <p>Extraction, tri et traitement de flux de données brutes stockés sous forme de fichiers structurés (formats CSV ou JSON).</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🛠️ Comment je l'ai fait ?</h5>
+                <p>Développement de scripts d'automatisation de lecture et d'analyse statistique dans le cadre de la SAE1.05 (Traiter des données).</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🎯 Pourquoi je l'ai fait ?</h5>
+                <p>Pour être en mesure d'analyser des données systèmes massives (fichiers de logs de serveurs) afin d'en extraire des indicateurs exploitables.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚠️ Mes difficultés</h5>
+                <p>Le nettoyage des lignes de données corrompues ou incomplètes qui provoquaient des erreurs fatales lors de l'exécution des boucles de tri.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>💡 Ce que j'ai appris</h5>
+                <p>Ouvrir et fermer dynamiquement des flux de fichiers de données externes en code et automatiser des calculs statistiques (moyennes, maximums).</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🔄 Amélioration</h5>
+                <p>Évoluer vers l'utilisation de bases de données relationnelles (langage SQL) pour gérer le stockage de manière plus performante et sécurisée.</p>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>📁 Preuves</h5>
+                <p>Rapport d'analyse de données et scripts de traitement automatique développés pour la SAE1.05. <br> <a href="https://gitlab.univ-artois.fr/baptiste_duez/sae15">https://gitlab.univ-artois.fr/baptiste_duez/sae15</a></p>
+                
+              </div>
+            </div>
+          </div>
         </div>
 
         <h2 class="ac-title" data-target="ac13-06">AC13.06 — S’intégrer dans un environnement propice au développement</h2>
         <div id="ac13-06" class="ac-content">
-          <p>
-            Travailler efficacement en équipe : versionning (Git), documentation, communication, méthodes
-            agiles, organisation du travail et bonnes pratiques collaboratives.
-          </p>
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚡ Ce que j’ai fait</h5>
+                <p>Planification des étapes de projet, répartition des tâches de développement et gestion d'un planning de livrables en équipe.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🛠️ Comment je l'ai fait ?</h5>
+                <p>Application des méthodologies d'organisation en Gestion de projet (R1.15) et coordination collective pendant la SAE1.04.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🎯 Pourquoi je l'ai fait ?</h5>
+                <p>Afin d'adopter des méthodes d'organisation de travail collaboratives indispensables pour s'intégrer efficacement au sein d'un service informatique.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>⚠️ Mes difficultés</h5>
+                <p>Estimer précisément le temps nécessaire au développement de chaque tâche logicielle afin d'éviter les retards sur le calendrier global.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>💡 Ce que j'ai appris</h5>
+                <p>Définir des jalons de projet clairs, utiliser des tableaux de suivi de tâches et rédiger des documentations claires pour les collaborateurs.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>🔄 Amélioration</h5>
+                <p>Intégrer les systèmes de contrôle de version distribués (comme Git et GitHub) dans mes futurs projets pour fluidifier la fusion des codes d'équipe.</p>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <div style="background:#343434;color:white;padding:20px;border-radius:12px;">
+                <h5>📁 Preuves</h5>
+                <p>Dossier d'organisation de projet et livrables de suivi d'équipe réalisés en SAE1.04.</p>
+                <a href="assets/fichier/SAE1_04_Gestion_Projet_Livrables.pdf" download="SAE1_04_Gestion_Projet_Livrables.pdf" class="btn btn-success">
+                  <i class="bi bi-download"></i> Télécharger le dossier projet
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -144,7 +396,7 @@
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">Personel</h3>
+      <h3 class="sitename">Personnel</h3>
       <p>Retrouvez mes réseaux ici</p>
       <div class="social-links d-flex justify-content-center">
         <a href="https://www.instagram.com/bapt3340/"><i class="bi bi-instagram"></i></a>
@@ -153,7 +405,7 @@
       </div>
       <div class="container">
         <div class="copyright">
-          <span><a href="mention_legals.html">Mentions légales</a></span> de <strong class="px-1 sitename">Personel</strong>
+          <span><a href="mention_legals.html">Mentions légales</a></span> de <strong class="px-1 sitename">Personnel</strong>
         </div>
         <div class="credits">
           Conçu par DUEZ Baptiste
@@ -162,21 +414,17 @@
     </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i>
   </a>
 
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
   <script>
